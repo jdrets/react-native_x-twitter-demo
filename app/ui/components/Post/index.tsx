@@ -24,7 +24,7 @@ export const Post = ({ post, withoutBorder = false }) => {
         <View style={{ flexDirection: "row" }}>
           <Text style={{ fontWeight: "600" }}>{post.user.nickname}</Text>
           <Text style={{ fontWeight: "300", paddingLeft: 8 }}>
-            @{post.user.nickname}
+            @{post.user.username}
           </Text>
         </View>
         <Text>{post.data.text}</Text>

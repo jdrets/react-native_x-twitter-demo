@@ -22,9 +22,9 @@ export const feedPosts = [
     id: 1,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "johndoe",
-      nickname: "John Doe",
+        "https://media-eze1-1.cdn.whatsapp.net/v/t61.24694-24/298230673_177774558084891_8568034100933174852_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdSW6aYcC76NtFEJCPnjsgeeEDehINj1ZX5ySFHj0bzrFA&oe=65F8492F&_nc_sid=e6ed6c&_nc_cat=104",
+      username: "brunocrisa",
+      nickname: "Brunaldo",
     },
     data: {
       text: "Hello World",
@@ -40,9 +40,9 @@ export const feedPosts = [
     id: 2,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "janedoe",
-      nickname: "Jane Doe",
+        "https://media-eze1-1.cdn.whatsapp.net/v/t61.24694-24/299540889_368915478600445_5306280459266149637_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdQ7OR2u6fi-UkGf9dC2rL7bFr0Tidspzma4OT8gXamiow&oe=65F83D6E&_nc_sid=e6ed6c&_nc_cat=108",
+      username: "maurocrisa",
+      nickname: "Maurito",
     },
     data: {
       text: "Good morning!",
@@ -60,9 +60,9 @@ export const feedPosts = [
     id: 3,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "alice",
-      nickname: "Alice",
+        "https://media.licdn.com/dms/image/D4D03AQGL0Droy7YoJA/profile-displayphoto-shrink_800_800/0/1709070027812?e=1715817600&v=beta&t=JhzB9iY_yeAaFQnwFiMNQG6DDtkWw66Nm_R2wRlm_ao",
+        username: "blopez",
+      nickname: "Benjamín Sánchez López",
     },
     data: {
       text: "What a beautiful day!",
@@ -78,9 +78,9 @@ export const feedPosts = [
     id: 4,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "bob",
-      nickname: "Bob",
+        "https://media-eze1-1.cdn.whatsapp.net/v/t61.24694-24/370353876_1060808461947797_7272974061439387590_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdRukPl5tOuSyZLLZgxw8EUNIPEvQ2aYMp4OwrKf9pbI-w&oe=65F81A6F&_nc_sid=e6ed6c&_nc_cat=103",
+      username: "on6o",
+      nickname: "Gastón",
     },
     data: {
       text: "Feeling excited!",
@@ -96,17 +96,17 @@ export const feedPosts = [
     id: 5,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "charlie",
-      nickname: "Charlie",
+        "https://pbs.twimg.com/profile_images/1001203220465713153/wjZyLxck_400x400.jpg",
+      username: "Alan Duz",
+      nickname: "alandiz",
     },
     data: {
-      text: "Just chilling.",
+      text: "What a desire to lose in Call of Duty.",
       date: "2021-01-05T20:00:00Z",
       meta: {
-        likes: 30,
-        comments: 15,
-        shares: 90,
+        likes: 5,
+        comments: 2,
+        shares: 2,
       },
     },
   },
@@ -114,13 +114,14 @@ export const feedPosts = [
     id: 6,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "charlie",
-      nickname: "Charlie",
+        "https://pbs.twimg.com/profile_images/1660132954729861123/SmgWpxG4_400x400.jpg",
+      username: "francocirulli95",
+      nickname: "Cachi",
     },
     data: {
-      text: "Just chilling.",
+      text: "Happy ATH $btc",
       date: "2021-01-05T20:00:00Z",
+      image: "https://media2.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif?cid=6c09b952m6udcjg3sk4m3kgz9k7uoowzqzft0nq55q05jhm9&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
       meta: {
         likes: 30,
         comments: 15,
@@ -132,12 +133,12 @@ export const feedPosts = [
     id: 7,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "charlie",
-      nickname: "Charlie",
+        "https://pbs.twimg.com/profile_images/1622817016082989059/Xf0lsSOT_400x400.jpg",
+      username: "houtwolf",
+      nickname: "Сука Блять",
     },
     data: {
-      text: "Just chilling.",
+      text: "Boring",
       date: "2021-01-05T20:00:00Z",
       meta: {
         likes: 30,
@@ -150,12 +151,12 @@ export const feedPosts = [
     id: 8,
     user: {
       avatar:
-        "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
-      username: "charlie",
-      nickname: "Charlie",
+        "https://pbs.twimg.com/profile_images/1508529661642428430/Pqv-SSQO_400x400.jpg",
+      username: "tomburrieza",
+      nickname: "tometo.eth",
     },
     data: {
-      text: "Just chilling.",
+      text: "The off is officially back on the stock market.",
       date: "2021-01-05T20:00:00Z",
       meta: {
         likes: 30,
