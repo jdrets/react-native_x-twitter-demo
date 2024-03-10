@@ -4,12 +4,23 @@ import { LayoutWrapper } from "../../ui/components/LayoutWrapper";
 import { feedPosts } from "@/mocks/feedPosts";
 import { Post } from "@/ui/components/Post";
 import { AddPostButton } from "@/ui/components/AddPostButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Page() {
-  const [posts, setPosts] = useState(feedPosts.sort(() => Math.random() - 0.5));
   const [loading, setLoading] = useState(false);
   const layoutProps = useLayoutContext();
+
+  const setPosts = (data) => {
+    layoutProps.setLayoutProps({
+      ...layoutProps,
+      loadingBar: false,
+      feedPosts: data,
+    });
+  };
+
+  useEffect(() => {
+    setPosts(feedPosts.sort(() => Math.random() - 0.5));
+  }, []);
 
   const handlePost = async (data) => {
     try {
@@ -17,8 +28,8 @@ export default function Page() {
 
       await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      setPosts([data, ...posts]);
-    } finally {
+      setPosts([data, ...layoutProps.feedPosts]);
+    } catch (error) {
       layoutProps.setLayoutProps({ ...layoutProps, loadingBar: false });
     }
   };
@@ -29,7 +40,7 @@ export default function Page() {
 
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      setPosts(posts.sort(() => Math.random() - 0.5));
+      setPosts(layoutProps.feedPosts.sort(() => Math.random() - 0.5));
     } finally {
       setLoading(false);
     }
@@ -39,7 +50,7 @@ export default function Page() {
     <>
       <LayoutWrapper onRefresh={handleRefresh} refreshing={loading}>
         <View style={{ gap: 0 }}>
-          {posts.map((post, index) => (
+          {layoutProps.feedPosts.map((post, index) => (
             <Post
               withoutBorder={index === 0}
               post={post}

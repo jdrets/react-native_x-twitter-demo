@@ -3,7 +3,7 @@ import { TouchableOpacity, View } from "react-native";
 import { FAB, Avatar, TextInput, Icon, Button } from "react-native-paper";
 import SwipeUpDownModal from "react-native-swipe-modal-up-down";
 import { theme } from "../Providers/theme";
-import { useUserContext } from "../Providers";
+import { useLayoutContext, useUserContext } from "../Providers";
 import { FeedPost } from "@/mocks/feedPosts";
 
 export const AddPostButton = ({
@@ -14,6 +14,7 @@ export const AddPostButton = ({
   const [show, setShow] = useState(false);
   const [animateModal, setAnimateModal] = useState(false);
   const [text, setText] = useState("");
+  const layoutProps = useLayoutContext();
 
   const user = useUserContext();
 
@@ -28,7 +29,7 @@ export const AddPostButton = ({
 
   const onPostMessage = async () => {
     handlePost({
-      id: +Math.random().toString(36).substring(7),
+      id: layoutProps.feedPosts.length + 1,
       user: {
         avatar: user.avatar,
         nickname: user.nickname,

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createContext } from "@chakra-ui/react-utils";
 import { PaperProvider } from "react-native-paper";
 import { theme } from "./theme";
+import { FeedPost, feedPosts } from "@/mocks/feedPosts";
 
 export const [UserContext, useUserContext] = createContext<UserProps>();
 export const [LayoutContext, useLayoutContext] =
@@ -12,6 +13,7 @@ export const Providers = ({ children, user }: ProvidersProps) => {
     Omit<LayoutContextProps, "setLayoutProps">
   >({
     loadingBar: false,
+    feedPosts,
   });
 
   return (
@@ -37,5 +39,6 @@ export interface UserProps {
 
 export interface LayoutContextProps {
   loadingBar: boolean;
+  feedPosts: FeedPost[];
   setLayoutProps: (props: LayoutContextProps) => void;
 }
