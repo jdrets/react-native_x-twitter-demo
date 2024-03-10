@@ -1,7 +1,7 @@
 export const userMockData = {
-  username: "John Doe",
+  username: "fredito",
   email: "john-doe@gmail.com",
-  nickname: "johndoe",
+  nickname: "Fredo Godofredo",
   avatar:
-    "https://media.licdn.com/dms/image/D4D03AQFJTgFvK9QpVQ/profile-displayphoto-shrink_200_200/0/1700684884290?e=1715817600&v=beta&t=EPTqe-IkHaNbXLqvgvPhPio9H2nMcvYZC72siGSe6d0",
+    "https://static.wikia.nocookie.net/lassombriasaventurasdebillyymandy/images/f/f1/Fredo_Godofredo.png/revision/latest/scale-to-width-down/230?cb=20091221190512&path-prefix=es",
 };

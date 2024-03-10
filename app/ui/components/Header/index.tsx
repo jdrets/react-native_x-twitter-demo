@@ -6,6 +6,7 @@ import { BlurView } from "expo-blur";
 import { ProgressBar } from "react-native-paper";
 
 import Logo from "@/assets/logo.png";
+import { InfoButton } from "./components/InfoButton";
 
 export const Header = () => {
   const user = useUserContext();
@@ -48,7 +49,7 @@ export const Header = () => {
                 width: 25.6,
               }}
             />
-            <Icon source="information-outline" size={24} />
+            <InfoButton />
           </View>
         </View>
       </View>
