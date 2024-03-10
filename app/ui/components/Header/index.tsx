@@ -39,6 +39,7 @@ export const Header = () => {
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
+              paddingTop: 8
             }}
           >
             <Avatar.Image source={{ uri: user.avatar }} size={32} />
