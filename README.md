@@ -6,7 +6,7 @@ Simple X Twitter clone with some features. I did this on one afternoon. I will u
 - Expo
 - React native paper
 
-## How check on my computer
+## How to check on my computer
 
 1 - Clone the repo
 
