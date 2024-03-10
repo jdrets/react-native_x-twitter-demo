@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { Text, useTheme, Button, useLayoutContext } from "@/ui";
+import { Text, useLayoutContext } from "@/ui";
 import { LayoutWrapper } from "../../ui/components/LayoutWrapper";
 import { feedPosts } from "@/mocks/feedPosts";
 import { Post } from "@/ui/components/Post";
@@ -8,9 +8,8 @@ import { useState } from "react";
 
 export default function Page() {
   const [posts, setPosts] = useState(feedPosts.sort(() => Math.random() - 0.5));
+  const [loading, setLoading] = useState(false);
   const layoutProps = useLayoutContext();
-
-  const theme = useTheme();
 
   const handlePost = async (data) => {
     try {
@@ -24,12 +23,28 @@ export default function Page() {
     }
   };
 
+  const handleRefresh = async () => {
+    try {
+      setLoading(true);
+
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      setPosts(posts.sort(() => Math.random() - 0.5));
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
-      <LayoutWrapper>
+      <LayoutWrapper onRefresh={handleRefresh} refreshing={loading}>
         <View style={{ gap: 0 }}>
           {posts.map((post, index) => (
-            <Post withoutBorder={index === 0} post={post} key={`${post.id}-${index}`} />
+            <Post
+              withoutBorder={index === 0}
+              post={post}
+              key={`${post.id}-${index}`}
+            />
           ))}
         </View>
 

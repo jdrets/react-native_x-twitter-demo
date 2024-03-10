@@ -1,9 +1,17 @@
-import { PropsWithChildren } from "react";
-import { SafeAreaView, ScrollView, View } from "react-native";
+import { ReactNode } from "react";
+import { RefreshControl, SafeAreaView, ScrollView, View } from "react-native";
 import { theme } from "../Providers/theme";
 import { useHeaderHeight } from "@react-navigation/elements";
 
-export const LayoutWrapper = ({ children }: PropsWithChildren) => {
+export const LayoutWrapper = ({
+  children,
+  onRefresh,
+  refreshing
+}: {
+  children: ReactNode;
+  refreshing?: boolean
+  onRefresh?: () => void;
+}) => {
   const headerHeight = useHeaderHeight();
 
   return (
@@ -12,6 +20,16 @@ export const LayoutWrapper = ({ children }: PropsWithChildren) => {
         backgroundColor: theme.colors.background,
         flex: 1,
       }}
+      refreshControl={
+        onRefresh ? (
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={theme.colors.primary}
+            progressViewOffset={headerHeight}
+          />
+        ) : undefined
+      }
     >
       <SafeAreaView
         style={{ marginHorizontal: 14, marginTop: headerHeight + 12 }}
