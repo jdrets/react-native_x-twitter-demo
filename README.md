@@ -11,7 +11,7 @@ Simple X Twitter clone with some features. I did this on one afternoon. I will u
 
 - pagination post
 
--e2e test with detox
+- e2e test with detox
 
 
 ## How to check on my computer
