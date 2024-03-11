@@ -6,6 +6,12 @@ Simple X Twitter clone with some features. I did this on one afternoon. I will u
 - Expo
 - React native paper
 
+## To do
+[] virtualized list
+[] pagination posts
+[] e2e test with detox
+
+
 ## How to check on my computer
 
 1 - Clone the repo
