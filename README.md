@@ -7,11 +7,11 @@ Simple X Twitter clone with some features. I did this on one afternoon. I will u
 - React native paper
 
 ## To do
-- virtualized list
+- [ ] Virtualized list
 
-- pagination post
+- [ ] Pagination post
 
-- e2e test with detox
+- [ ] E2E test with detox
 
 
 ## How to check on my computer
